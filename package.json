@@ -1,0 +1,11 @@
+{
+  "name": "deiv-resume",
+  "version": "1.0.0",
+  "description": "Deiv's resume",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "prettier": "2.5.1"
+  }
+}

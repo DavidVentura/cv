@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>David Ventura - Resume</title>
+    <base target="_blank" rel="noopener noreferrer" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+  </head>
+  <body>
+    <header id="dv-header">
+      <div>
+        <h1>David Ventura</h1>
+        <h2>SysAdmin, Devops & Dev <small>Jack of all trades</small></h2>
+      </div>
+      <nav>
+        <ul>
+          <li>davidv.dev</li>
+          <li>davidventura27@gmail.com</li>
+          <li>github.com/DavidVentura</li>
+          <li>blog.davidv.dev</li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+  <main id="dv-jobs">
+    <h2>Full time positions</h2>
+    <section class="dv-job-section">
+      <div>
+        <h3>
+          Optiver
+          <small> SRE </small>
+        </h3>
+        <p>2018 - present</p>
+      </div>
+      <div>
+        <p>
+          Proident quis ipsum fugiat officia fugiat non elit ea veniam elit quis
+          aute ullamco ad. Laborum do fugiat est duis esse aute ex eiusmod nisi
+          eu. Duis ut voluptate eu aliqua sunt qui duis. Ullamco est id est in
+          irure proident consectetur occaecat duis velit laboris officia.
+        </p>
+        <p>
+          Incididunt nulla id in mollit ullamco fugiat nostrud id sunt non.
+          Deserunt occaecat excepteur aliqua do ullamco deserunt magna proident
+          ut sunt aute labore amet. Adipisicing consequat dolor duis minim
+          commodo ex nostrud deserunt.
+        </p>
+      </div>
+    </section>
+    <section class="dv-job-section">
+      <div>
+        <h3>
+          ESPECIFICOS Buenos Aires
+          <small> Everything AND the bagel seasoning </small>
+        </h3>
+        <p>2014 - 2018</p>
+      </div>
+      <div>
+        <p>
+          Proident quis ipsum fugiat officia fugiat non elit ea veniam elit quis
+          aute ullamco ad. Laborum do fugiat est duis esse aute ex eiusmod nisi
+          eu. Duis ut voluptate eu aliqua sunt qui duis. Ullamco est id est in
+          irure proident consectetur occaecat duis velit laboris officia.
+        </p>
+        <h4>Live-streaming Platform</h4>
+        <p>
+          The objective of this project was to create a complete pipeline for
+          video & audio, from sources to end users, this was done in multiple
+          subprojects:
+        </p>
+        <ul>
+          <li>
+            Manage distributed services centrally
+            <ul>
+              <li>
+                Initialize sources (cameras, audio mixers, screen grabbers)
+              </li>
+              <li>Initialize central Live-Vide-Mixer</li>
+              <li>Select scenes</li>
+              <li>Play videos for both onsite and remote students</li>
+            </ul>
+          </li>
+          <li>Data collection & analytics</li>
+          <li>Feed recording & steraming</li>
+          <li>
+            Interop between professor-operator-students (Professors draw on a
+            tablet and students ask questions via chat)
+          </li>
+        </ul>
+        <h4>Online training platform</h4>
+        <p>
+          The objective of this project was to create a 'forum'-like website to
+          post the videos with the corresponding text material, allowing the
+          students to communicate with each other
+        </p>
+        <h4>Billing System</h4>
+        <p>
+          This project manages most of the finances of the company and some
+          extras:
+        </p>
+        <ul>
+          <li>
+            Billing, receipts (AFIP), Shipping labels, e-commerce, stock,
+            supplies.
+          </li>
+          <li>
+            Document scanning, printing, security cameras, certificate generator
+            and monthly reports.
+          </li>
+        </ul>
+      </div>
+    </section>
+    <h2>Freelancing Jobs</h2>
+    <section>
+      <h3>
+        Streamall (netflix 'clone')
+        <small>dev?</small>
+      </h3>
+      <p>dates?</p>
+      <p>
+        This project was designed to allow users access video on demand (VOD).
+        It is composed by 3 primary subsystems:
+      </p>
+      <ul>
+        <li>
+          Download & Conversion
+          <ul>
+            <li>Parse 3rd-party endpoints</li>
+            <li>Download files</li>
+            <li>Distribute transcoding jobs to various servers via redis</li>
+            <li>
+              After transcoding is done, the results are copied to the
+              correspondig server(s)
+            </li>
+          </ul>
+        </li>
+        <li>
+          User Administration
+          <ul>
+            <li>
+              The project admin was able to review and edit all available
+              metadata and available files through a backoffice app
+            </li>
+						<li>
+							Create and manage users and API-keys
+						</li>
+          </ul>
+        </li>
+        <li>
+          End-user streaming
+          <ul>
+            <li>
+              Every end user gets unique links (that only work for them) for each request made, these links have a short TTL
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+		<section>
+			<h3>News Parser (PYMNTS.com)</h3>
+			<p>20..?</p>
+			<p>
+				The main purpose of this project was the automatization of data scraping from multiple news sources.
+			</p>
+			<p>
+				The data is gathered by polling the sources in a parallelized manner every set amount of time, validated against a set of keywords (with associated per-source weights) and stored in a database.
+			</p>
+			<p>
+				The sources and keywords can be managed by the users via a web interface; they also decide which matching articles are not useful and tag them as such, every month the weights and keywords get reevaluated based on 'useless' articles
+			</p>
+			<p>
+				We also have a dashboard displaying metrics, keywords, per-source matches and per-keyword matches.
+			</p>
+		</section>
+		<section>
+			<h3>Multi-language interpreter to extract embedded SQL queries</h3>
+			<p>
+				We had a lot of old applications that had embedded SQL queries and the company had to migrate from Oracle 8 to Oracle 11. To achieve that, we had to analyze ALL the embedded queries so we created an parser for VB6, VB.NET, C#, ASP.NET and Java.
+			</p>
+		</section>
+		<h2>Bonus Tracks</h2>
+		<section>
+			<p>
+				I’ve had some fun doing the following:
+			</p>
+			<ul>
+				<li>
+					Reverse engineer the “BA Denuncia Vial” app to automate reporting the cars that always park in front of my garage (!!!)
+				</li>
+				<li>
+					Detect license plates on cars using OpenCV on Toll booths to catch speeding cars in freeways and highways (this was brought to the attention of Autopistas Urbanas Sociedad Anónima (AUSA) but ultimately rejected)
+				</li>
+				<li>
+					Book downloader, made so I can download the next book in a series during a long night reading session, I access with my kindle, submit the title, choose the result and get the book in the correct format
+				</li>
+				<li>
+					Bunch of IoT projects:
+					<ul>
+						<li>
+							UV Index tracker
+						</li>
+						<li>
+							Automate my nightstand lamp so it powers on/off with my kindle and considering the available daylight
+						</li>
+						<li>
+							Mood lightning controlled via smartphone
+						</li>
+						<li>
+							The “Puppycam”, a raspberry pi based camera that live-streamed our dog when he was very little, so we’d miss him less.
+						</li>
+						<li>
+							twitch.tv multistreamer, mix multiple twitch.tv channels in a server to be able to quickly switch between them and cast them to my TV. This was done for the Dota2 International
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<h2>Lab Experience</h2>
+		<section>
+			<p>
+				I have my own server lab to study, research and to test configurations. This is my personal “datacenter” which currently hosts 40 containers via proxmox; notably:
+			</p>
+			<ul>
+				<li>
+					ARM cluster: load-balancing LXD cluster on multiple physical ARM SBCs (Raspberry Pi, Odroid XU4, Odroid U2,
+Odroid C2) with live process migration with CRIU
+				</li>
+				<li>Personal projects git repository
+					</li>
+					<li>
+						Jenkins which runs automated tests for my personal projects, as well as compiling some of my cross platform project (in particular a Qt5 app targeting windows, linux and android)
+					</li>
+					<li>
+						Load-balancing and fail-over hosts for my web applications (such as my blog and some media services)
+					</li>
+					<li>
+						Personal debian repository for packages which I deploy on most test containers and some real servers.
+					</li>
+				</li>
+			</ul>
+		</section>
+  </main>
+</html>
